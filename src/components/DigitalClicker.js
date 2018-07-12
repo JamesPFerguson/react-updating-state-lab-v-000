@@ -3,6 +3,10 @@
 import React from 'react';
 
 export default class DigitalClicker extends React.Component {
+<<<<<<< HEAD
+=======
+
+>>>>>>> 9d180be7768299f5751d08c675e97841caa319af
   constructor() {
     super();
 
@@ -11,6 +15,7 @@ export default class DigitalClicker extends React.Component {
     }
   }
 
+<<<<<<< HEAD
   clicker = (prevState) => {
     this.setState(prevState => {
       return {timesClicked: prevState.timesClicked + 1}
@@ -22,4 +27,16 @@ export default class DigitalClicker extends React.Component {
       <button onClick={this.clicker}>{this.state.timesClicked}</button>
     );
   }
+=======
+  render() {
+    return (
+      <button onClick={this.clicker()}>{this.state.timesClicked}</button>
+    )
+  }
+
+  clicker(pState) {
+    this.state.timesClicked++
+  }
+
+>>>>>>> 9d180be7768299f5751d08c675e97841caa319af
 }

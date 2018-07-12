@@ -9,7 +9,7 @@ export default class YouTubeDebugger extends React.Component {
     }
   }
 
-  changerate = () => {
+  changeRate = () => {
     this.setState({
       settings: {
         ...this.state.settings,

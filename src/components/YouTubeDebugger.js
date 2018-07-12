@@ -9,7 +9,7 @@ export default class YouTubeDebugger extends React.Component {
     }
   }
 
-  updateBitrate = () => {
+  changerate = () => {
     this.setState({
       settings: {
         ...this.state.settings,
@@ -18,7 +18,7 @@ export default class YouTubeDebugger extends React.Component {
     })
   }
 
-  updateResolution = () => {
+  changeResolution = () => {
     this.setState({
       settings: {
         ...this.state.settings, video: { resolution: '720p'}
